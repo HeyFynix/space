@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import MobileBottomNavbar from './MobileBottomNavbar';
+import logo from '../Images/logo1.png'
 import './btn.css'; // Your glitch or styled button
 
 const navItems = ['Home', 'About', 'Services', 'Projects',  'Contact'];
@@ -9,16 +10,17 @@ const navItems = ['Home', 'About', 'Services', 'Projects',  'Contact'];
 const HeyfynixNavbar = () => {
   return (
     <>
+  
       {/* Desktop Navbar */}
       <div className="w-full hidden md:flex justify-center px-4 py-2 sticky top-0 z-50">
         <nav className="bg-[#000000] bg-opacity-90 rounded-xl max-w-7xl w-full flex items-center justify-between px-4 py-2 h-14 shadow-md">
           
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center ">
             <img
-              src="https://storage.googleapis.com/a1aa/image/1344f131-d01a-4968-c71e-25fe315a9422.jpg"
+              src={logo}
               alt="Heyfynix logo"
-              className="w-6 h-6 rounded-full"
+              className="w-10 h-10 rounded-full"
             />
             <span className="text-white font-semibold text-base select-none">Heyfynix</span>
           </div>
