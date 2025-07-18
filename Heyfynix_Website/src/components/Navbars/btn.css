@@ -29,14 +29,14 @@
   &:before {
     background: linear-gradient(
       90deg,
-      #1232d5,
-      #ffd208,
-      #e61bfc,
-      #47cf73,
+      #729aff,
+      #142a39,
+      #1e142f,
+      #120d2a,
       #0ebeff,
-      #ffdd40,
-      #ae63e4,
-      #04ba3e
+      #1c193d,
+      #4e87f1,
+      #17103e
     );
     background-size: 200% 200%;
   }
@@ -45,14 +45,14 @@
   }
   &:hover:before,
   &:focus:before {
-    animation: rainbow-border 1.5s linear infinite;
+    animation: rainbow-border 3.5s linear infinite;
   }
 }
 @keyframes rainbow-border {
   0% {
-    background-position: 0% 50%;
+    background-position: 50% 0%;
   }
   100% {
-    background-position: 200% 50%;
+    background-position: -200% 50%;
   }
 }
